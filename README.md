@@ -1,33 +1,49 @@
-# 🔧 hermes-budget-tracker
+# Budget Tracker
 
-A [Hermes Agent](https://hermes-agent.nousresearch.com/) skill for **budget-tracker** (productivity category).
+> Track personal finances, expenses, and savings goals with Obsidian integration and automated weekly reports.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Marrowleaf/hermes-budget-tracker)
+
+## Features
+
+- Natural language expense logging ("spent £12 on lunch", "rent of £850")
+- Category-based expense tracking with custom categories
+- Monthly budget monitoring with overspend alerts
+- Savings goals with progress tracking
+- Weekly and monthly financial summaries as Obsidian notes
+- Recurring expense support (subscriptions, bills)
+- Currency handling with multi-currency support
+- Charts and trend analysis via Obsidian Dataview
 
 ## Installation
 
 ```bash
-cd ~/.hermes/skills/productivity
-git clone https://github.com/Marrowleaf/hermes-budget-tracker.git budget-tracker
+hermes skills install productivity/budget-tracker
 ```
+
+Or manually clone into `~/.hermes/skills/productivity/budget-tracker/`.
 
 ## Usage
 
-Once installed, this skill is automatically detected by Hermes Agent.
-
 ```
-skill_view(name="budget-tracker")
+budget log "spent £12.50 on lunch"
+budget log "rent payment of £850"
+budget report week
+budget report month
+budget set savings-goal "holiday" --target 2000
+budget categories
+budget summary
 ```
 
-## Structure
+## Configuration
 
-- `SKILL.md` — Full documentation
-- `references/` — Reference materials
-- `scripts/` — Utility scripts
-- `templates/` — Templates
+Store financial data in your Obsidian vault at `~/obsidian-vault/3-Resources/budget/`. Set your default currency and monthly budget in `config.md`.
+
+## Requirements
+
+- Hermes Agent v0.12+
+- Obsidian vault (for data storage)
 
 ## License
 
-MIT — see [LICENSE](LICENSE)
-
----
-
-Built with ❤️ by [James Durrant](https://github.com/Marrowleaf)
+MIT
