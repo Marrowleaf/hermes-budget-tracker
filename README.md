@@ -47,3 +47,10 @@ Store financial data in your Obsidian vault at `~/obsidian-vault/3-Resources/bud
 ## License
 
 MIT
+
+## Related Hermes Skills
+- [hermes-airtable](https://github.com/Marrowleaf/hermes-airtable) — Airtable integration and automation
+- [hermes-consensus-engine](https://github.com/Marrowleaf/hermes-consensus-engine) — Multi-model consensus and decision engine
+- [hermes-nano-pdf](https://github.com/Marrowleaf/hermes-nano-pdf) — Lightweight PDF processing and manipulation
+- [hermes-notion](https://github.com/Marrowleaf/hermes-notion) — Notion integration and management
+- [hermes-ocr-and-documents](https://github.com/Marrowleaf/hermes-ocr-and-documents) — OCR and document processing
